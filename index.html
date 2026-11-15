@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cogie0806 サイト内検索</title>
+  <style>
+    body {
+      font-family: "Meiryo", "Hiragino Kaku Gothic ProN", sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #1a73e8;
+      margin-bottom: 8px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .back-link:hover { text-decoration: underline; }
+    .search-box-wrapper {
+      position: relative;
+      margin-bottom: 15px;
+    }
+    #searchInput {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 16px;
+      border: 2px solid #1a73e8;
+      border-radius: 30px;
+      box-sizing: border-box;
+      outline: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    #searchInput:focus {
+      box-shadow: 0 2px 10px rgba(26,115,232,0.25);
+    }
+    #hitCount {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+      padding-left: 10px;
+    }
+    .result-card {
+      display: block;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid #e0e6ed;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .result-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-color: #1a73e8;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1a73e8;
+      margin-bottom: 6px;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .card-url {
+      font-size: 12px;
+      color: #008000;
+    }
+    .no-result {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+      border-radius: 12px;
+      color: #666;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://cogie0806.github.io/home/" class="back-link">← ホームページへ戻る</a>
+
+  <header>
+    <h1>🔍 cogie0806 サイト内検索</h1>
+    <p style="font-size: 14px; color: #666; margin: 0;">ページ名や機能（例：おみくじ、電卓、タイピング、マイクラ）で探せます</p>
+  </header>
+
+  <div class="search-box-wrapper">
+    <input type="text" id="searchInput" placeholder="キーワードを入力してください..." autofocus>
+  </div>
+
+  <div id="hitCount"></div>
+  <div id="resultArea"></div>
+
+  <!-- 検索結果.js（search.js）を読み込み -->
+  <script src="search.js"></script>
+
+</body>
+</html>
