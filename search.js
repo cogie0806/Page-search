@@ -65,7 +65,7 @@ const allSitePages = [
    {
     title: "迷路ゲーム",
     description: "迷路のミニゲームです。",
-    url: "https://cogie0806.github.io/Apple_Catch_Game/",
+    url: "https://cogie0806.github.io/meze/",
     keywords: "迷路　めいろ　メイロ ゲーム ミニゲーム アクション"
   }
 ];
