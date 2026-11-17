@@ -61,6 +61,12 @@ const allSitePages = [
     description: "現在準備・整備中のAI関連ページです。",
     url: "https://cogie0806.github.io/AI/",
     keywords: "ai 人工知能 整備中"
+  },
+   {
+    title: "迷路ゲーム",
+    description: "迷路のミニゲームです。",
+    url: "https://cogie0806.github.io/Apple_Catch_Game/",
+    keywords: "迷路　めいろ　メイロ ゲーム ミニゲーム アクション"
   }
 ];
 
