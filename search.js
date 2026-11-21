@@ -56,17 +56,23 @@ const allSitePages = [
     url: "https://cogie0806.github.io/Apple_Catch_Game/",
     keywords: "りんご リンゴ ゲーム ミニゲーム アクション"
   },
+     {
+    title: "迷路ゲーム",
+    description: "迷路のミニゲームです。",
+    url: "https://cogie0806.github.io/maze/",
+    keywords: "迷路 めいろ メイロ ゲーム ミニゲーム アクション"
+  },
+   {
+    title: "よくある質問(FAQ)",
+    description: "迷路のミニゲームです。",
+    url: "https://cogie0806.github.io/FAQ/",
+    keywords: "よくある質問 faq FAQ QA qa よくある 質問"
+  },
   {
     title: "🛠 AI/cogie0806（整備中）",
     description: "現在準備・整備中のAI関連ページです。",
     url: "https://cogie0806.github.io/AI/",
     keywords: "ai 人工知能 整備中"
-  },
-   {
-    title: "迷路ゲーム",
-    description: "迷路のミニゲームです。",
-    url: "https://cogie0806.github.io/meze/",
-    keywords: "迷路　めいろ　メイロ ゲーム ミニゲーム アクション"
   }
 ];
 
